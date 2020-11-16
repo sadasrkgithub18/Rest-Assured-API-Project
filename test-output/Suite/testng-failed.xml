@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.w2a.listeners.ExtentListeners"/>
+  </listeners>
+  <test thread-count="5" name="Create Customer API(failed)">
+    <classes>
+      <class name="com.w2a.testcases.DataUsingHashtable">
+        <methods>
+          <include name="tearDown"/>
+          <include name="validateCreateCustWithInValidKey" invocation-numbers="0 1 2"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.w2a.testcases.DataUsingHashtable -->
+    </classes>
+  </test> <!-- Create Customer API(failed) -->
+</suite> <!-- Failed suite [Suite] -->
